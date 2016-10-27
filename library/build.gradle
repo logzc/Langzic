@@ -1,0 +1,23 @@
+group 'com.logzc'
+version '0.1'
+
+
+
+apply plugin: 'java'
+//support providedCompile
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+
+
+    compile "junit:junit:+"
+    compile fileTree(dir: 'libs', include: '*.jar')
+
+}
